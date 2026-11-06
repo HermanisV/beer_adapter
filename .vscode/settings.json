@@ -1,0 +1,7 @@
+{
+  "chat.agentSkillsLocations": {
+    ".github/skills": true,
+    "bruve-mcp/.github/skills": true
+  }
+}
+

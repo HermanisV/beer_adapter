@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "brewfather": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/brewfather-mcp/.venv/Scripts/python.exe",
+      "args": ["${workspaceFolder}/brewfather-mcp/src/main.py"],
+      "env": {
+        "BREWFATHER_API_USER_ID": "${env:BF_USER_ID}",
+        "BREWFATHER_API_KEY": "${env:BF_USER_KEY}",
+        "BREWFATHER_ENABLE_WRITES": "1",
+        "BREWFATHER_ENABLE_RECIPE_WRITES": "1"
+      }
+    },
+    "bruve": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/bruve-mcp/.venv/Scripts/python.exe",
+      "args": ["${workspaceFolder}/bruve-mcp/src/main.py"]
+    }
+  }
+}

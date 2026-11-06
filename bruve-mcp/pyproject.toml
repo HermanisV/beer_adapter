@@ -1,0 +1,22 @@
+[project]
+name = "bruve_mcp"
+version = "0.1.0"
+description = "Read-only, token-efficient MCP server for exploring the bruve.lv homebrew shop"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.23.0,<2",
+    "pydantic>=2.10.6",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"

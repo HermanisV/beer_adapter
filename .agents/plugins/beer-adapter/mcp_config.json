@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "brewfather": {
+      "command": "c:/github/beer_adapter/brewfather-mcp/.venv/Scripts/python.exe",
+      "args": [
+        "c:/github/beer_adapter/brewfather-mcp/src/main.py"
+      ],
+      "env": {
+        "BREWFATHER_ENABLE_WRITES": "1",
+        "BREWFATHER_ENABLE_RECIPE_WRITES": "1"
+      }
+    },
+    "bruve": {
+      "command": "c:/github/beer_adapter/bruve-mcp/.venv/Scripts/python.exe",
+      "args": [
+        "c:/github/beer_adapter/bruve-mcp/src/main.py"
+      ]
+    }
+  }
+}
+
